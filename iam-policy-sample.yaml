@@ -1,0 +1,21 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "VisualEditor0",
+			"Effect": "Allow",
+			"Action": [
+				"rds:CreateDBInstance",
+				"ec2:RunInstances",
+				"ec2:StopInstances"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "VisualEditor1",
+			"Effect": "Deny",
+			"Action": "ec2:TerminateInstances",
+			"Resource": "*"
+		}
+	]
+}
